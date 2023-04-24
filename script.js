@@ -214,5 +214,14 @@ portuguese.addEventListener(`click`, function() {
 })
 
 aboutNav.addEventListener(`click`,function(){
-    window.scrollTo(0, 600)
+window.scrollTo({
+        top: 600,
+        behavior: 'smooth',
+      })
+})
+experienceNav.addEventListener(`click`,function(){
+    window.scrollTo({
+        top: 1600,
+        behavior: 'smooth',
+      })
 })

@@ -63,6 +63,15 @@ body {
     .elementinmenu {
         display: inline-flex;
     }
+    .draw2 {
+        
+        stroke-dasharray: 5,5;
+        stroke-dashoffset: 10000;
+        animation: dash2 3s linear infinite;
+     }
+     @keyframes dash2 {
+        to { stroke-dashoffset: 0;}
+     }
     .elementinmenu {
         position: relative;
         left: 55.5vw;
@@ -91,6 +100,20 @@ body {
     .elementinmenu:nth-child(6) {
         animation-delay: 1.25s;
     }
+    .elementinmenu:nth-child(7) {
+        animation-delay: 1.5s;
+    }
+    .Logo{
+     
+        position:absolute;
+    }
+    .draw {
+        stroke-dasharray: 100;
+        animation: dashdraw 3s linear infinite;
+     }
+     @keyframes dashdraw {
+        to {stroke-dashoffset: 200}
+     }
     .numberinmenulistelements {
         padding-right: 10px;
         color: var(--lightblue-color);
@@ -251,6 +274,8 @@ body {
     position: relative;
 }
 
+
+
 #buttonText {
     position: relative;
     z-index: 1;
@@ -354,6 +379,8 @@ body {
 .elementforlanguages:hover {
     color: var(--lightblue-color);
 }
+
+
 
 .elementforlanguages:first-child {
     padding-left: 35px;
