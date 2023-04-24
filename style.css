@@ -1,0 +1,386 @@
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/*General*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: var(--background-color-html);
+    height: 300%;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+:root {
+    --background-color-html: #00152c;
+    --lightblue-color: rgb(24, 199, 202);
+    --darker-blue: rgb(0, 43, 78);
+    --dark-grey: rgba(218, 218, 218, 0.773);
+    --light-grey: rgba(232, 232, 232, 0.841);
+}
+
+
+/*Laptop*/
+
+@media (min-width: 1366px) {
+    #page{
+        padding-top: 0vh;
+    }
+    #page.navBarShown{
+        padding-top: 1vh;
+    }
+    .menulist {
+        z-index: 1;
+        position: fixed;
+        visibility: unset;
+        
+        width: 100vw;
+        height: 10vh;
+        background-color: var(--background-color-html);
+    }
+    .shadowMenuList{
+        -webkit-box-shadow: 0px 4px 15px 5px rgba(2, 0, 18, 0.51);
+        box-shadow: 0px 4px 15px 5px rgba(2, 0, 18, 0.51);
+    }
+    .menulist.scrollUp {
+        visibility: unset;
+    }
+    .menulist.scrollDown {
+        visibility: hidden;
+    }
+    .menulist.topReached {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .menulistelements,
+    .elementinmenu {
+        display: inline-flex;
+    }
+    .elementinmenu {
+        position: relative;
+        left: 55.5vw;
+        margin-left: 25px;
+        animation-duration: 0.3s;
+        color: rgba(218, 218, 218, 0.773);
+        font-size: 1.1rem;
+        transition: color 0.5s;
+        top: 25px;
+    }
+    .elementinmenu:nth-child(1) {
+        animation-delay: 0.25s;
+    }
+    .elementinmenu:nth-child(2) {
+        animation-delay: 0.5s;
+    }
+    .elementinmenu:nth-child(3) {
+        animation-delay: 0.75s;
+    }
+    .elementinmenu:nth-child(4) {
+        animation-delay: 1s;
+    }
+    .elementinmenu:nth-child(5) {
+        animation-delay: 1.15s;
+    }
+    .elementinmenu:nth-child(6) {
+        animation-delay: 1.25s;
+    }
+    .numberinmenulistelements {
+        padding-right: 10px;
+        color: var(--lightblue-color);
+    }
+    .elementinmenu:hover {
+        color: var(--lightblue-color);
+    }
+    #globe {
+        position: relative;
+        bottom: 0.5vh;
+    }
+    .introduction {
+        position: absolute;
+        top: 19vh;
+        left: 14vw;
+    }
+    #names {
+        color: var(--lightblue-color);
+        font-size: .25;
+        animation-delay: 1.2s;
+    }
+    #name {
+        animation-delay: 1.325s;
+        color: white;
+        font-size: 5.5rem;
+    }
+    #whatamidoing {
+        position: relative;
+        bottom: 10px;
+        animation-delay: 1.4s;
+        font-size: 4.5rem;
+        color: rgb(185, 185, 185);
+    }
+    #Informations {
+        position: relative;
+        top: 2.5vh;
+        width: 50vw;
+        animation-delay: 1.5s;
+        color: rgb(185, 185, 185);
+        font-size: 1.25rem;
+    }
+    #lineleftforemail {
+        border-top: solid 1000vh var(--dark-grey);
+        width: 4px;
+        position: relative;
+        top: 80vh;
+    }
+    #textleftline {
+        color: var(--dark-grey);
+        transform: rotate(90deg);
+        position: relative;
+        right: 5.75vw;
+        top: 67.5vh;
+    }
+    .leftline {
+        position: fixed;
+        left: 96vw;
+        opacity: 0;
+        animation: 0.75s inAnimationSide linear;
+        animation-delay: 1.825s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes inAnimationSide {
+        0% {
+            opacity: 0;
+            top: 50px;
+        }
+        100% {
+            opacity: 1;
+            top: 0px;
+        }
+    }
+    .label {
+        color: var(--lightblue-color);
+        font-size: 2rem;
+    }
+    .aboutMe {
+        position: absolute;
+        top: 120vh;
+        left: 15vw;
+        font-size: 1.5rem;
+    }
+    .textforlabel {
+        color: var(--dark-grey);
+        font-size: 2.5rem;
+        position: relative;
+        bottom: 7.25vh;
+        left: 4.25vw;
+        font-weight: 600;
+    }
+    #linerightforabout {
+        width: 30vw;
+        height: 1.5px;
+        background-color: var(--dark-grey);
+        position: relative;
+        bottom: 11vh;
+        left: 17vw;
+    }
+    .experience {
+        position: absolute;
+        top: 260vh;
+        left: 15vw;
+        font-size: 1.5rem;
+    }
+    .textforlabel {
+        color: var(--dark-grey);
+        font-size: 2.5rem;
+        position: relative;
+        bottom: 7.25vh;
+        left: 4.25vw;
+        font-weight: 600;
+    }
+    #linerightforexp {
+        width: 30vw;
+        height: 1.5px;
+        background-color: var(--dark-grey);
+        position: relative;
+        bottom: 11vh;
+        left: 20vw;
+    }
+    #recenttechnologies{
+      
+  position: relative;
+  top: 5vh;
+
+    }
+    #recenttechnologies li{
+        background: url('./img/Screenshot_2023-04-22_155640-removebg-preview.png') no-repeat center left;
+        margin: 0;
+        padding: 4px 0 4px 20px;
+        list-style: none;
+        color: var(--light-grey);
+    }
+    #recenttechnologies li span{
+        padding-left: 1vw;
+        
+    }
+    
+}
+
+#seemyprojects {
+    top: 55px;
+    position: relative;
+    padding: 20px 50px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 40px;
+    animation-delay: 1.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#seemyprojects span {
+    position: relative;
+}
+
+#buttonText {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial;
+    letter-spacing: 8px;
+}
+
+#seemyprojects .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #4973ff;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+#seemyprojects .liquid::after,
+#seemyprojects .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #000;
+}
+
+#seemyprojects .liquid::before {
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+}
+
+#seemyprojects .liquid::after {
+    border-radius: 40%;
+    background: rgba(20, 20, 20, .5);
+    animation: animate 10s linear infinite;
+}
+
+#seemyprojects:hover .liquid {
+    top: -110px;
+}
+
+.aboutMe{
+    animation-delay: 2s;
+    padding-right: 10vw;
+}
+#textforabout{
+    color:var(--light-grey)
+}
+.experience{
+    animation-delay: 2.5s;
+    padding-right: 10vw;
+}
+#textforexp{
+    color:var(--light-grey)
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+.languages {
+    background-color: var(--darker-blue);
+    position: absolute;
+    top: 3vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 16px;
+    opacity: 0;
+}
+
+.languages.globeClicked {
+    animation: languageBox 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.languages.globeClickedBack {
+    animation: languageBoxBack 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.elementforlanguages {
+    color: white;
+    transition: color 0.25s;
+}
+
+.elementforlanguages:hover {
+    color: var(--lightblue-color);
+}
+
+.elementforlanguages:first-child {
+    padding-left: 35px;
+}
+
+.elementforlanguages:last-child {
+    padding-right: 35px;
+}
+
+@keyframes languageBox {
+    0% {
+        left: 34vw;
+        opacity: 0;
+    }
+    100% {
+        left: 31vw;
+        opacity: 1;
+    }
+}
+
+@keyframes languageBoxBack {
+    100% {
+        left: 34vw;
+        opacity: 0;
+    }
+    0% {
+        left: 31vw;
+        opacity: 1;
+    }
+}
