@@ -13,7 +13,7 @@
 html,
 body {
     background-color: var(--background-color-html);
-    height: 300%;
+    height: 215%;
     width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -218,6 +218,24 @@ body {
         left: 15vw;
         font-size: 1.5rem;
     }
+    .projects {
+        position: absolute;
+        top: 350vh;
+        left: 15vw;
+        font-size: 1.5rem;
+    }
+    .contact {
+        position: absolute;
+        top: 410vh;
+        left: 15vw;
+        font-size: 1.5rem;
+    }
+    .footer{
+        position: absolute;
+        top: 460vh;
+        left: 15vw;
+        font-size: 1.5rem;
+    }
     .textforlabel {
         color: var(--dark-grey);
         font-size: 2.5rem;
@@ -227,6 +245,22 @@ body {
         font-weight: 600;
     }
     #linerightforexp {
+        width: 30vw;
+        height: 1.5px;
+        background-color: var(--dark-grey);
+        position: relative;
+        bottom: 11vh;
+        left: 20vw;
+    }
+    #linerightforprojects {
+        width: 30vw;
+        height: 1.5px;
+        background-color: var(--dark-grey);
+        position: relative;
+        bottom: 11vh;
+        left: 20vw;
+    }
+    #linerightforcontact {
         width: 30vw;
         height: 1.5px;
         background-color: var(--dark-grey);
@@ -339,6 +373,29 @@ body {
     color:var(--light-grey)
 }
 
+.projects{
+    animation-delay: 2.75s;
+    padding-right: 10vw;
+}
+.footer{
+    animation-delay: 3s;
+    padding-right: 10vw;
+    
+}
+#textforprojects{
+    color:var(--light-grey)
+}
+.contact{
+    animation-delay: 2.8s;
+    padding-right: 10vw;
+}
+#textforcontact {
+    color:var(--light-grey)
+}
+.footerText{
+    color: var(--light-grey);
+}
+
 @keyframes animate {
     0% {
         transform: translate(-50%, -75%) rotate(0deg);
@@ -410,4 +467,24 @@ body {
         left: 31vw;
         opacity: 1;
     }
+}
+
+.contactMailButton{
+    background-color: rgb(34, 200, 255);
+    width: 10vw;
+    height: 10vh;
+    border-radius: 32px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    position: relative;
+    top: 5vh;
+    left: 30vw;
+    text-align: center;
+}
+
+.footerText{
+color: var(--light-grey);
+margin-bottom: 2vh;
 }

@@ -10,6 +10,10 @@
     "textforabout": "I am 13 years old boy and my hobbies are coding, playing table tennis and reading. I am going to high school in germany. I started coding at the age of 9. I started coding discord Bots with python and I defenitly were one of the  most popular discord bot developers back then. At the Age of 11 I started coding websites. I started with small projects and made bigger and bigger. It is my destination to create websites, whcih help people and I am still working on Websites like that. At the age of 12 I learned C#, JavaScript, Node.js, HTML, CSS, SCSS and more. I also learned how to create web applications with Angular, React.js and Next.js. \n \n Now I am working on a lot of prjects that can help students and new developers I like to create Web Applications that everyone can use to automate things and find out things faster. \n \n Here are a few technologies I’ve been working with recently: ",
    "labelAboText": "About me",
     "textforexp": "I have coded in a lot of projects. I have experience in coding with JavaScript and working with data. \n \n I also have moderated on a lot of big development servers on discord and whenever I could help with coding, I did. \n \n I can work with databases like MongoDB and know how to code reusable code with classes. Most of the time I code with JavaScript and my style of coding is readable for me and chronologically. \n \n \n More will be added soon!",
-    "labelExpText": "Experience"
+    "labelExpText": "Experience",
+    "textforprojects": "Currently I have no public noteworthy projects! \n \n More will be added soon!",
+    "labelProjectsText": "Projects",
+    "textforcontact": "I am currently not looking for a cooperation but you can mail me! \n Click the button! ",
+    "labelcontacttext": "Contact"
 
 }

@@ -27,7 +27,7 @@ const german = document.getElementById(`ger`);
 const portuguese = document.getElementById(`por`);
 const england = document.getElementById(`en`);
 
-
+const contactMailButton = document.getElementById("contactMailButton");
 
 const aboutNav = document.getElementById(`abo`);
 const projectsNav = document.getElementById(`proj`);
@@ -45,6 +45,13 @@ const textForExp = document.getElementById(`textforexp`);
 
 const labelExpText = document.getElementById(`experiencelabeltext`);
 const labelAboText = document.getElementById(`aboutMeLabelText`);
+
+const labelProjectsText = document.getElementById("projectslabeltext");
+const textforprojects = document.getElementById("textforprojects");
+
+const labelcontacttext= document.getElementById("contactlabeltext");
+const textforcontact = document.querySelector(".textforcontact");
+
 let globeClickedTimes = 0; // needed for now
 
 
@@ -84,7 +91,13 @@ function checking_Language_Updating() {
             textforexp.innerText = data.textforexp
             labelExpText.innerText=data.labelExpText
 
+           textforprojects.innerText=data.textforprojects;
+           labelProjectsText.innerText=data.labelProjectsText;
+
+           labelcontacttext.innerText = data.labelcontacttext;
+           textforcontact.innerHTML= data.textforcontact;
            
+
             document.getElementById(`buttonText`).innerHTML = data.seeProjects;
             console.log(data.seeProjects);
         })
@@ -217,11 +230,34 @@ aboutNav.addEventListener(`click`,function(){
 window.scrollTo({
         top: 600,
         behavior: 'smooth',
-      })
-})
+      });
+});
 experienceNav.addEventListener(`click`,function(){
     window.scrollTo({
         top: 1600,
         behavior: 'smooth',
-      })
-})
+      });
+});
+
+projectsNav.addEventListener("click", function(){
+    window.scrollTo({
+        top: 2200,
+        behavior:"smooth",
+    });
+});
+
+contactNav.addEventListener("click", function(){
+window.scrollTo({
+    top: 2600,
+    behavior:"smooth",
+});
+}
+);
+
+setTimeout(() => {
+    contactMailButton.addEventListener("click", function(){
+        
+        window.location.href = "mailto:simi.coding@gmail.com";
+        
+    });
+}, 10000);
